@@ -237,16 +237,16 @@ public class SceneManager {
         }
         // edge detector thresholds
         else if(KeyListener.isKeyPressed(GLFW_KEY_SEMICOLON)) { // decrease thresh1
-            EdgeDetector.get().updateEdgeThresholds(-10, 0);
+            EdgeDetector.get().updateEdgeThresholds(-1, 0);
         }
         else if(KeyListener.isKeyPressed(GLFW_KEY_APOSTROPHE)) { // increase thresh1
-            EdgeDetector.get().updateEdgeThresholds(10, 0);
+            EdgeDetector.get().updateEdgeThresholds(1, 0);
         }
         else if(KeyListener.isKeyPressed(GLFW_KEY_LEFT_BRACKET)) { // decrease thresh2
-            EdgeDetector.get().updateEdgeThresholds(0, -10);
+            EdgeDetector.get().updateEdgeThresholds(0, -1);
         }
         else if(KeyListener.isKeyPressed(GLFW_KEY_RIGHT_BRACKET)) { // decrease thresh2
-            EdgeDetector.get().updateEdgeThresholds(0, 10);
+            EdgeDetector.get().updateEdgeThresholds(0, 1);
         }
         else if(KeyListener.isKeyPressed(GLFW_KEY_UP)) { // move selected slider UP
             if(redButton.isSelected()) {
